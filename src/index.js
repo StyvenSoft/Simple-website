@@ -10,7 +10,10 @@ app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
 // routers
-app.use(require('./routers/'));
+app.use(require('./routers/index'));
+
+// static file
+app.use(express.static(path.join(__dirname, 'public')))
 
 // listener the server
 app.listen(app.get('port'), () => {

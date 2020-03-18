@@ -24,3 +24,9 @@ $ npm run dev
 - Divide content using partials feature from Template engines
 - Deploy our app using a simple service called Now(A service from Zeit Company)
 
+---
+
+Embedded JavaScript templating [EJS Docs](https://ejs.co/#docs)
+
+[Express Guide](https://expressjs.com/es/guide/routing.html)
+

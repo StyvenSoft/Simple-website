@@ -1,0 +1,5 @@
+body{
+    background: -webkit-linear-gradient(to right, #485563, #29323c); /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #485563, #29323c); 
+     font-family: 'Baloo Da 2', cursive;
+}
