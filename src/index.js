@@ -6,14 +6,11 @@ const path = require('path')
 app.set('port', 4000);
 app.set('views', path.join(__dirname, 'views'));
 // Template Engine
+app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
 // routers
-app.get('/', (req, res) => {
-    //res.send('Hello World')
-    //res.sendFile(path.join(__dirname, 'views/index.html'))
-    res.render('index');
-});
+app.use(require('./routers/'));
 
 // listener the server
 app.listen(app.get('port'), () => {
