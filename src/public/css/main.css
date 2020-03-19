@@ -3,3 +3,9 @@ body{
      background: linear-gradient(to right, #485563, #29323c); 
      font-family: 'Baloo Da 2', cursive;
 }
+.fab {
+    color: aliceblue;
+}
+footer{
+    color: gray;
+}
