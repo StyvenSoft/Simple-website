@@ -3,7 +3,7 @@ const app = express();
 const path = require('path')
 
 // settings
-app.set('port', 4000);
+const PORT = process.env.PORT || 4000;
 app.set('views', path.join(__dirname, 'src/views'));
 // Template Engine
 app.engine('html', require('ejs').renderFile)
@@ -16,7 +16,7 @@ app.use(require('./src/routers/index'));
 app.use(express.static(path.join(__dirname, 'src/public')))
 
 // listener the server
-app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
+app.listen(PORT, () => {
+    console.log(`Server in listen on http://localhost:${PORT}`);
 });
 
