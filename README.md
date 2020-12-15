@@ -2,6 +2,9 @@
 
 Practice project of a landing page with the help of nodejs and express technologies.
 
+## Preview
+
+![Screen](./src/public/img/Screen.png)
 
 ```sh
 $ npm i express ejs morgan 

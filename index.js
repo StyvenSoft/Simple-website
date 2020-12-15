@@ -4,16 +4,16 @@ const path = require('path')
 
 // settings
 app.set('port', 4000);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'src/views'));
 // Template Engine
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
 // routers
-app.use(require('./routers/index'));
+app.use(require('./src/routers/index'));
 
 // static file
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'src/public')))
 
 // listener the server
 app.listen(app.get('port'), () => {
